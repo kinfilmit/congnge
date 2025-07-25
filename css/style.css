@@ -1,0 +1,102 @@
+/* style.css – Giao diện chính cho blog */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+main {
+  padding: 1em;
+}
+
+.posts article {
+  background: #fff;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.posts a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.posts a:hover {
+  text-decoration: underline;
+}
+
+.date {
+  font-size: 0.9em;
+  color: #888;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+/* ---------- Responsive (Mobile first) ---------- */
+@media (max-width: 768px) {
+  header, main, footer {
+    padding: 1em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .posts article {
+    padding: 1em;
+    font-size: 1em;
+  }
+
+  form input,
+  form textarea,
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  h1, h2 {
+    font-size: 1.3em;
+  }
+}
+
+.back-home {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 8px 12px;
+  background-color: #eee;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.back-home:hover {
+  background-color: #ddd;
+}
